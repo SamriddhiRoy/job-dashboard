@@ -22,7 +22,7 @@ import MessagesTabContent from './MessagesTabContent';
 import ActivityTabContent from './ActivityTabContent';
 import ScheduleTabContent from './ScheduleTabContent';
 import ManageTabContent from './ManageTabContent';
-
+import ApiTabContent from './ApiTabContent';
 
 function JobDashboardMiddle() {
   const [activeTab, setActiveTab] = useState(1); 
@@ -55,7 +55,8 @@ function JobDashboardMiddle() {
       case 5:
         return <ManageTabContent />;
     
-
+        case 6:
+        return  <ApiTabContent/>;
       default:
         return <JobsTabContent />;
     }
